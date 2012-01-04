@@ -1,0 +1,13 @@
+name: KillStreaks
+main: me.javoris767.KillStreaks.KillStreaks
+version: 0.2
+website: http://pr3datorcraft.us
+author: javoris767
+description: Call of Duty type kill streaks on Minecraft!
+commands:
+  ks:
+     description: Disaplays all Kill Streaks.
+     usage: /<command> - Kill Streak
+  ks streaks:
+     description: Disaplays all Kill Streaks.
+     usage: /<command> - Kill Streak
