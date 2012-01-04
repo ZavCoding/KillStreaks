@@ -15,20 +15,13 @@ public class KillStreaksCMDs implements CommandExecutor {
 		@Override
 		public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args) {
 			if (sender instanceof Player) {
-				if (sender.hasPermission("ender.use") || sender.isOp()) {
+				if (sender.hasPermission("ks.use") || sender.isOp()) {
 					if (args.length < 1) {
 						sender.sendMessage(ChatColor.GOLD + "-------------------*KillStreaks*-----------------");
 						sender.sendMessage(ChatColor.GOLD + "1. /ks streaks - Shows all kill streaks.");
 						sender.sendMessage(ChatColor.GOLD + "2. /ks barracks - Displays your stats.");
 						sender.sendMessage(ChatColor.GOLD + "3. /ks set <streak> - Set your kill streaks");
 						sender.sendMessage(ChatColor.GOLD + "-------------------------------------------------");
-					}
-					if (args.length > 1) {
-						sender.sendMessage(ChatColor.GOLD + "-------------------*KillStreaks-----------------");
-						sender.sendMessage(ChatColor.GOLD + "1. /ender on - Turns endermen on.");
-						sender.sendMessage(ChatColor.GOLD + "2. /ender off - Turns endermen off.");
-						sender.sendMessage(ChatColor.GOLD + "3. /ender toggle - Toggles enderman");
-						sender.sendMessage(ChatColor.GOLD + "------------------------------------------------");
 					}
 					if (args.length == 1) {
 						if (args[0].equalsIgnoreCase("streaks")) {

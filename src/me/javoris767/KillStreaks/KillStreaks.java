@@ -4,12 +4,13 @@ import java.util.logging.Logger;
 
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.Event;
 import org.bukkit.event.Event.Priority;
 
 public class KillStreaks extends JavaPlugin {
+	FileConfiguration config;
 	Logger log = Logger.getLogger("Minecraft");
-	
 	@Override
 	public void onEnable() {
 		log.info("[KillStreaks] Enabled!");
