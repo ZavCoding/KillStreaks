@@ -12,12 +12,6 @@ import org.bukkit.util.config.Configuration;
 public class KillStreaks extends JavaPlugin {
 	public static KillStreaks plugin;
 	Logger log = Logger.getLogger("Minecraft");
-	private Configuration config;
-    File configFile = new File("plugins/KillSteaks/config.yml");
-    public static String playername;
-    private static File KillStreaks = new File("plugins", "ConfigTest");
-    private static File configFile2 = new File(KillStreaks, playername + ".yml");
-    String ks;
 	@Override
 	public void onEnable() {
 		log.info("[KillStreaks] Enabled!");
